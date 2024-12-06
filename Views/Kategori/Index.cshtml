@@ -1,0 +1,37 @@
+﻿@using _50_Ders_MVC_Projesi.Models.Entities
+@using PagedList
+@using PagedList.Mvc  
+@model PagedList.IPagedList<Category> 
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_mainLayout.cshtml";
+}
+
+<table class="table table-bordered mb-4">
+    <thead>
+        <tr>
+            <th>KATEGORI ID</th>
+            <th>KATEGORI ADI</th>
+            <th>SİL</th>
+            <th>GÜNCELLEME</th> 
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var category in Model)
+            {
+                <tr>
+                    <th>@category.KATEGORIID</th>
+                    <td>@category.KATEGORIAD</td>
+                    <td><a href="/Kategori/Delete/@category.KATEGORIID" class="btn btn-danger"><i class="fa-solid fa-trash-can me-1"></i>Sil</a></td>
+                    <td><a href="/Kategori/Update/@category.KATEGORIID" class="btn btn-success"><i class="fa-solid fa-edit me-1"></i>Güncelle</a></td>
+                </tr>
+            }
+    </tbody>
+
+</table>
+<div >
+    @Html.PagedListPager((IPagedList)Model,
+                    pageNumber => Url.Action("Index", new { pageNumber }) )
+</div>
+<a href="/Kategori/Create" class="btn btn-primary"><i class="fa-duotone fa-solid fa-plus me-1"></i>Yeni kategori Ekle</a>
+

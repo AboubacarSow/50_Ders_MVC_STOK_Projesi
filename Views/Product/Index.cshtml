@@ -1,0 +1,40 @@
+﻿@using _50_Ders_MVC_Projesi.Models.Entities
+@model List<Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_mainLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ÜRÜN ID</th>
+            <th>ÜRÜN ADI</th>
+            <th>MARKA</th>
+            <th>KATEGORİ</th>
+            <th>FIYAT</th>
+            <th>STOK</th>
+            <th>SİL</th>
+            <th>GÜNCELLEME</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <th>@product.URUNID</th>
+                <td>@product.URUNAD</td>
+                <td>@product.MARKA</td>
+                <td>@product.Category.KATEGORIAD</td>
+                <td>@product.FIYAT</td>
+                <td>@product.STOK</td>
+                <td><a href="/Product/Delete/@product.URUNID" class="btn btn-danger"><i class="fa-solid fa-trash-can mx-1"></i>Sil</a></td>
+                <td><a href="/Product/Update/@product.URUNID" class="btn btn-success"><i class="fa-solid fa-edit me-1"></i>Güncelle</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a href="/Product/Create" class="btn btn-primary"><i class="fa-duotone fa-solid fa-plus me-1"></i>Yeni Ürün Ekle</a>
+
+
