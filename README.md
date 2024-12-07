@@ -9,9 +9,9 @@
 ### Bu Proje Stok ve Müşteri için admin Paneli bir web uygulama geliştirimiş
 <hr />
 
-![Favikon](Assets/fivion.ico)
+<img src="Assets/fivion.ico" alt="FAVİKON"/>
 
-### Projede :
+## Projede :
 
 #### Kullanıllan teknolojiler  🛠:
 
@@ -25,17 +25,17 @@
 
 #### Veri tabanı 🗄️: 
 
- ##### MSSQL
+<ul style="list-style:circle; margin-left:30px">
+	<li>MSSQL</li>
+</ul>
 
 #### Kullanıllan Yapıları 	📚 :
 
-	  <ul style="list-style:circle; margin-left:30px;"> 
-		<li> Entity Framework DataBase First Yaklaşımı </li>
-		<li> Modal </li>
-		<li> Pagination </li>
-		<li> Firtreleme</li>
-	
-   </ul>
+<ul style="list-style:circle; margin-left:30px">
+	<li> Entity Framework Database First Yaklaşımı </li>
+	<li> Modal </li>
+	<li> Firtreleme </li>
+</ul>
 
 
 ## Kategoriler Sayfası
@@ -78,6 +78,10 @@
 
  Her hangi bir sayfada yardım linki basınca bu modal gözükmektedir
 
+
+ #### Diagram 
+
+ <img src="Assets/screenShoots/diagram.PNG" alt="diagram "/>
 
 </body>
 

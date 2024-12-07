@@ -182,6 +182,7 @@
     <Content Include="Assets\screenShoots\createclient.PNG" />
     <Content Include="Assets\screenShoots\create_Kategori.PNG" />
     <Content Include="Assets\screenShoots\create_product.PNG" />
+    <Content Include="Assets\screenShoots\diagram.PNG" />
     <Content Include="Assets\screenShoots\help.PNG" />
     <Content Include="Assets\screenShoots\kategori.PNG" />
     <Content Include="Assets\screenShoots\products.PNG" />
