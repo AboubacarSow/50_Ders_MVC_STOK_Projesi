@@ -178,6 +178,15 @@
   <ItemGroup>
     <Content Include="Assets\favicon.ico" />
     <Content Include="Assets\favion.ico" />
+    <Content Include="Assets\screenShoots\client.PNG" />
+    <Content Include="Assets\screenShoots\createclient.PNG" />
+    <Content Include="Assets\screenShoots\create_Kategori.PNG" />
+    <Content Include="Assets\screenShoots\create_product.PNG" />
+    <Content Include="Assets\screenShoots\help.PNG" />
+    <Content Include="Assets\screenShoots\kategori.PNG" />
+    <Content Include="Assets\screenShoots\products.PNG" />
+    <Content Include="Assets\screenShoots\purchase_Sale.PNG" />
+    <Content Include="Assets\screenShoots\sale.PNG" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
