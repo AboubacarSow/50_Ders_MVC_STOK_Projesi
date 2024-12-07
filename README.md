@@ -15,7 +15,7 @@
 
 #### Kullanıllan teknolojiler  🛠:
 
-   <ul style="list-style:circle; margin-left:30px;margin-bottom"> 
+   <ul style="list-style:circle; margin-left:30px"> 
 		<li> Bootstrap 5.3.3 </li>
 		<li> Jquery 3.6.0 </li>
 		<li> PagedList (pagination için) </li>
@@ -24,54 +24,56 @@
    </ul>
 
 #### Veri tabanı 🗄️: 
- ###### MSSQL
 
-#### Kullanıllan Yapıları 	📚 
+ ##### MSSQL
 
-	 <ul style="list-style:circle; margin-left:30px;margin-bottom"> 
-		<li> Entity Framework DataBase First Yaklaşımı</li>
+#### Kullanıllan Yapıları 	📚 :
+
+	  <ul style="list-style:circle; margin-left:30px;"> 
+		<li> Entity Framework DataBase First Yaklaşımı </li>
 		<li> Modal </li>
 		<li> Pagination </li>
-		<li>Firtreleme</li>
-     </ul>
+		<li> Firtreleme</li>
+	
+   </ul>
 
 ## Kategoriler Sayfası
 
-<img src="~/Assets/screenShoots/kategori.PNG" alt="List of Categories">
+<img src="~/Assets/screenShoots/kategori.PNG" alt="List of Categories"/>
 
 ## Kategori Ekleme Sayfası
 
-<img src="~/Assets/screenShoots/create_kategori.PNG" alt="Create Category">
+<img src="~/Assets/screenShoots/create_kategori.PNG" alt="Create Category"/>
 
 ## Ürünleri Sayfası
 
-<img src="~/Assets/screenShoots/products.PNG" alt="List of Products">
+<img src="~/Assets/screenShoots/products.PNG" alt="List of Products"/>
 
 ## Ürün Ekleme Sayfası
 
-<img src="~/Assets/screenShoots/create_product.PNG" alt="Create Product">
+<img src="~/Assets/screenShoots/create_product.PNG" alt="Create Product"/>
 
 ## Müşteriler Sayfası
 
-<img src="~/Assets/screenShoots/client.PNG" alt="Client List">
+<img src="~/Assets/screenShoots/client.PNG" alt="Client List" />
 
 ## Müşteri Oluşturma Sayfası
 
-<img src="~/Assets/screenShoots/createclient.PNG" alt="Create client">
+<img src="~/Assets/screenShoots/createclient.PNG" alt="Create client"/>
 
 
 ## Satışlar Sayfası
 
-<img src="~/Assets/screenShoots/sale.PNG" alt="Sale list">
+<img src="~/Assets/screenShoots/sale.PNG" alt="Sale list"/>
 
 
 ## Satış Oluşturma Modalı
 
-<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Purchase">
+<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Purchase"/>
 
 ## Yardım Modalı
 
-<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Help modal">
+<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Help modal"/>
 
 #### Her hangi bir sayfada yardım linki basınca bu modal gözükmektedir
 
