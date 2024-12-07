@@ -8,8 +8,9 @@
 
 ### Bu Proje Stok ve Müşteri için admin Paneli bir web uygulama geliştirimiş
 <hr />
-
-<img src="Assets/fivion.ico" alt="FAVİKON"/>
+<div style="display:flex; justify-content:center">
+	<img src="Assets/screenShoots/shopping.png" alt="FAVİKON" style="width:50%; height:50%; border-radius:50%"/>
+</div>
 
 ## Projede :
 
