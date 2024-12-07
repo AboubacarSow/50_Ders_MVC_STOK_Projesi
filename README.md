@@ -45,7 +45,7 @@
 
 ## Kategori Ekleme Sayfası
 
-<img src="Assets/screenShoots/create_kategori.PNG" alt="Create Category"/>
+<img src="Assets/screenShoots/create_Kategori.PNG" alt="Create Category"/>
 
 ## Ürünleri Sayfası
 
