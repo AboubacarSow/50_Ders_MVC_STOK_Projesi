@@ -9,8 +9,11 @@
 ### Bu Proje Stok ve Müşteri için admin Paneli bir web uygulama geliştirimiş
 <hr />
 <div style="display:flex; justify-content:center">
-	<img src="Assets/screenShoots/shopping.png" alt="FAVİKON" style="width:50%; height:50%; border-radius:50%"/>
+	<img src="Assets/screenShoots/shopping.png" alt="FAVİKON" style="width:150px; height:75px; border-radius:50%"/>
+
 </div>
+
+Favikon
 
 ## Projede :
 
