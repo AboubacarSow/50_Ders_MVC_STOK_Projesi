@@ -22,16 +22,15 @@
                 <tr>
                     <th>@category.KATEGORIID</th>
                     <td>@category.KATEGORIAD</td>
-                    <td><a href="/Kategori/Delete/@category.KATEGORIID" class="btn btn-danger"><i class="fa-solid fa-trash-can me-1"></i>Sil</a></td>
-                    <td><a href="/Kategori/Update/@category.KATEGORIID" class="btn btn-success"><i class="fa-solid fa-edit me-1"></i>Güncelle</a></td>
+                    <td><a href="/Kategori/Delete/@category.KATEGORIID" class="btn btn-danger"><i class="fas fa-trash me-1"></i>Sil</a></td>
+                    <td><a href="/Kategori/Update/@category.KATEGORIID" class="btn btn-success"><i class="fas fa-edit me-1"></i>Güncelle</a></td>
                 </tr>
             }
     </tbody>
 
 </table>
 <div >
-    @Html.PagedListPager((IPagedList)Model,
-                    pageNumber => Url.Action("Index", new { pageNumber }) )
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }) )
 </div>
-<a href="/Kategori/Create" class="btn btn-primary"><i class="fa-duotone fa-solid fa-plus me-1"></i>Yeni kategori Ekle</a>
+<a href="/Kategori/Create" class="btn btn-primary"><i class="fas fa-plus me-1"></i>Yeni kategori Ekle</a>
 

@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_mainLayout.cshtml";
 }
 
-<h5 class="text-center text-success">Güncelleme</h5>
+<h5 class="text-center text-success"><i class="fas fa-edit me-1"></i>Güncelleme</h5>
 <form method="post">
     <input type="hidden" value="@Model.URUNID" name="URUNID" />
     <div class="my-2">
@@ -31,7 +31,7 @@
         <label class="form-label">STOK</label>
         <input class="form-control" type="text" name="STOK" value="@Model.STOK"/>
     </div>
-    <button class="btn btn-info my-3 text-white"><i class="fa-duotone fa-solid fa-plus me-1"></i>Ürünü Güncelle</button>
+    <button class="btn btn-info my-3 text-white"><i class="fas fa-edit me-1"></i>Ürünü Güncelle</button>
 </form>
 
 

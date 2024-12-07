@@ -35,10 +35,10 @@
                 <th>@client.MUSTERIID</th>
                 <td>@client.MUSTERIAD</td>
                 <td>@client.MUSTERISOYAD</td>
-                <td><a href="/Client/Delete/@client.MUSTERIID" class="btn btn-danger"><i class="fa-solid fa-trash-can me-1"></i>Sil</a></td>
-                <td><a href="/Client/Update/@client.MUSTERIID" class="btn btn-success"><i class="fa-solid fa-edit me-1"></i>Güncelle</a></td>
+                <td><a href="/Client/Delete/@client.MUSTERIID" class="btn btn-danger"><i class="fas fa-trash me-1"></i>Sil</a></td>
+                <td><a href="/Client/Update/@client.MUSTERIID" class="btn btn-success"><i class="fas fa-edit me-1"></i>Güncelle</a></td>
                 <td>
-                    @Html.ActionLink("Sil", "Delete", new { id = client.MUSTERIID }, new { @class = "btn btn-danger", onclick = "return confirm('Gerçekten Silmek İster mısınız?')" })
+                    @Html.ActionLink("Silme Butonu", "Delete", new { id = client.MUSTERIID }, new { @class = "btn btn-warning text-danger", onclick = "return confirm('Gerçekten Silmek İster mısınız?')" })
                 </td>
             </tr>
         }
@@ -46,5 +46,5 @@
 
 </table>
 <a href="/Client/Create" class="btn btn-primary">
-    <i class="fa-duotone fa-solid fa-plus me-1"></i> Yeni Müşteri Ekle
+    <i class="fas fa-plus me-1"></i>Yeni Müşteri Ekle
 </a>

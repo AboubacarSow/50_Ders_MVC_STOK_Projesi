@@ -1,28 +1,29 @@
 ﻿
 @{
     ViewBag.Title = "Yardım";
-    Layout = "~/Views/Shared/_mainLayout.cshtml";
+    Layout = null;
 }
- <style>
-     .contentu {
-         width: 800px;
-         height: 50%;
-         border: none;
-         border-radius: 5px;
-         box-shadow: 0 5px rgb(128, 128, 128);
-         text-align: center;
-         padding: 15px;
-     }
- </style>
-<div class="container d-flex justify-content-center">
-    <div class="bg-light contentu">
-        <p class="display-6"> <i class="fa-solid fa-plus"></i> YARDIM </p>
-        <p class="text-body-secondary">
-            Bu .Net Framework MVC web uygulaması <span class= "lead"> ABOUBACAR SOW </span> 
-            tarafından  <span class="fw-light" > 12 Aralık 2024 </span>'de kodlayıp ve tamamlanmıştır.
-            YouTube'ta ücretsiz olan 50 DERS MVC yer almaktadır
-        </p>
 
+<div class="modal fade" id="modalhelp" tabindex="-1" aria-labelledby="modaltitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title fs-5 text-center" id="modaltitle">YARDIM</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body contentu">
+                <p class="text-body-secondary">
+                    Bu .Net Framework MVC web uygulaması <span class="lead"> ABOUBACAR SOW </span>
+                    tarafından  <span class="fw-light"> 12 Aralık 2024 </span>'de kodlayıp ve tamamlanmıştır.
+                    YouTube'ta ücretsiz olan 50 DERS MVC yer almaktadır
+                </p>
+            </div>
+             <div class="modal-footer">
+                        <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Okay</button>
+             </div>
+
+           
+        </div>
     </div>
 </div>
 

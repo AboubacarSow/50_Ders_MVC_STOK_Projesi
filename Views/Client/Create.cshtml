@@ -5,11 +5,11 @@
     Layout = "~/Views/Shared/_mainLayout.cshtml";
 }
 
-<h5 class="text-center text-primary">Create</h5>
+<h5 class="text-center text-primary"><i class="fas fa-plus me-1"></i>Create</h5>
 <form method="post">
     <div class="my-2">
         <label class="form-label">Müşteri Adı</label>
-        <input class="form-control" type="text" name="MUSTERIAD" />
+        <input class="form-control" type="text" name="MUSTERIAD" id="musteriad" />
         @Html.ValidationMessageFor(m => m.MUSTERIAD, "", new { @class = "text-danger" })
     </div>
     <div class="my-2">
@@ -18,7 +18,7 @@
         @Html.ValidationMessageFor(m => m.MUSTERISOYAD, "", new { @class = "text-danger" })
     </div>
     <div class="my-2">
-        <button class="btn btn-info my-3 text-white" id="myInput"><i class="fa-duotone fa-solid fa-plus me-1"></i>Müşteri Ekle</button>
+        <button class="btn btn-info my-3 text-white" id="myInput"><i class="fas fa-plus me-1"></i>Müşteri Ekle</button>
     </div>
 </form>
 
@@ -26,10 +26,13 @@
 
 
 <script>
-
-    $('#myInput').click(function() {
-        alert("Müşteri Ekleme Yapıldı")        
-             }
-    )
+    const musteri = document.querySelector('#musteriad').value;
+    
+    if (musteri.lenght > 0) {
+        $('#myInput').click(function() {
+            alert("Müşteri Ekleme Yapıldı")        
+                 }
+        )
+    }
 </script>
 

@@ -7,7 +7,7 @@
 
 
 
-<table class="table table-bordered " id="targetTable">
+<table class="table table-bordered mt-2 " id="tableCible">
     <thead>
         <tr>
             <th>ÜRÜN ID</th>
@@ -30,22 +30,23 @@
                 <td>@product.Category.KATEGORIAD</td>
                 <td>@product.FIYAT</td>
                 <td>@product.STOK</td>
-                <td><a href="/Product/Delete/@product.URUNID" class="btn btn-danger"><i class="fa-solid fa-trash-can mx-1"></i>Sil</a></td>
-                <td><a href="/Product/Update/@product.URUNID" class="btn btn-success"><i class="fa-solid fa-edit me-1"></i>Güncelle</a></td>
+                <td><a href="/Product/Delete/@product.URUNID" class="btn btn-danger"><i class="fas fa-trash me-1"></i>Sil</a></td>
+                <td><a href="/Product/Update/@product.URUNID" class="btn btn-success"><i class="fas fa-edit me-1"></i>Güncelle</a></td>
             </tr>
         }
     </tbody>
+    <tfoot>
+
+    </tfoot>
 
 </table>
-<a href="/Product/Create" class="btn btn-primary"><i class="fa-duotone fa-solid fa-plus me-1"></i>Yeni Ürün Ekle</a>
-<link href="~/Assets/datatables.min.css" rel="stylesheet" />
-<link href="~/Assets/datatables.css" rel="stylesheet" />
-<script src="~/Assets/datatables.js"></script>
-<script src="~/Assets/datatables.min.js"></script>
+<a href="/Product/Create" class="btn btn-primary mt-4"><i class="fas fa-plus me-1"></i>Yeni Ürün Ekle</a>
 
+<link href="~/Content/datatables.min.css" rel="stylesheet" />
+<script src="~/Scripts/datatables.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $('#targetTable').DataTable();
-    });
+    
+    new DataTable('#tableCible');
+   
 
 </script>

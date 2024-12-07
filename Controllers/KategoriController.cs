@@ -10,11 +10,10 @@ namespace _50_Ders_MVC_Projesi.Controllers
     {
         Entities _dbContext = new Entities();
         // GET: Kategori
-        public ActionResult Index(int? page)
+        public ActionResult Index(int page=1)
         {
-            int pageNumber=page ?? 1;
             int pageSize = 4;
-            var values = _dbContext.Categories.ToList().ToPagedList(pageNumber, pageSize);
+            var values = _dbContext.Categories.ToList().ToPagedList(page, pageSize);
             return View(values);
         }
         [HttpGet]
