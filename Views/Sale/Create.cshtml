@@ -1,0 +1,49 @@
+﻿@model _50_Ders_MVC_Projesi.Models.Entities.Sale
+@{
+    Layout = null;
+}
+
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSale">
+        Satış Yap
+    </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalSale" tabindex="-1" aria-labelledby="modaltitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title fs-5 text-center" id="modaltitle">SATIŞ İŞLEMİ</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div>
+                <form method="post" action="/Sale/Create">
+                    <div class="text-danger">@Html.ValidationSummary()</div> 
+                    <div class="modal-body">
+                        <div class="my-2">
+                            <label class="form-label">Ürün Adı </label>
+                            @Html.DropDownListFor(u => u.URUN, (List<SelectListItem>)ViewBag.Produits, new { @class = "form-control" })
+                        </div>
+                        <div class="my-2">
+                            <label class="form-label">Müşteri Adı Ve Soyadı </label>
+                            @Html.DropDownListFor(c => c.MUSTERI, (List<SelectListItem>)ViewBag.Clients, new { @class = "form-control" })
+                        </div>
+                        <div class="my-2">
+                            <label class="form-label">Kaç Adet?</label>
+                            <input type="number" name="ADET" class="form-control" />
+                        </div>
+                        <div class="my-2">
+                            <label class="form-label">Fıyat</label>
+                            <input type="number" name="FIYAT" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-info"type="submit"data-bs-dismiss="modal"><i class="fa-duotone fa-solid fa-plus me-1"></i> Onayla</button>
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Vazgeç</button>
+</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

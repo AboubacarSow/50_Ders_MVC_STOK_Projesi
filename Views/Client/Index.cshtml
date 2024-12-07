@@ -5,6 +5,18 @@
     Layout = "~/Views/Shared/_mainLayout.cshtml";
 }
 
+@using (Html.BeginForm("Index", "Client", FormMethod.Get))
+{
+    <b>Muşteri Adı : </b> @Html.TextBox("parameter")
+    <button class="btn btn-primary" type="submit">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        Ara
+    </button>
+}
+
+
+<br />
+<br />
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -13,6 +25,7 @@
             <th>MÜŞTERİ SOYAD</th>
             <th>SİL</th>
             <th>GÜNCELLEME</th>
+            <th>ALERT</th>
         </tr>
     </thead>
     <tbody>
@@ -24,6 +37,9 @@
                 <td>@client.MUSTERISOYAD</td>
                 <td><a href="/Client/Delete/@client.MUSTERIID" class="btn btn-danger"><i class="fa-solid fa-trash-can me-1"></i>Sil</a></td>
                 <td><a href="/Client/Update/@client.MUSTERIID" class="btn btn-success"><i class="fa-solid fa-edit me-1"></i>Güncelle</a></td>
+                <td>
+                    @Html.ActionLink("Sil", "Delete", new { id = client.MUSTERIID }, new { @class = "btn btn-danger", onclick = "return confirm('Gerçekten Silmek İster mısınız?')" })
+                </td>
             </tr>
         }
     </tbody>

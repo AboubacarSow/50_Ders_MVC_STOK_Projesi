@@ -18,41 +18,18 @@
         @Html.ValidationMessageFor(m => m.MUSTERISOYAD, "", new { @class = "text-danger" })
     </div>
     <div class="my-2">
-        <button class="btn btn-info my-3 text-white" data-bs-toggle="modal" id="myInput" data-bs-target="#buttonModal"> <i class="fa-duotone fa-solid fa-plus me-1"></i>Müşteri Ekle</button>
+        <button class="btn btn-info my-3 text-white" id="myInput"><i class="fa-duotone fa-solid fa-plus me-1"></i>Müşteri Ekle</button>
     </div>
 </form>
 
 
 
 
-<div class="modal fade" id="buttonModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title fs-5" id="staticBackdropLabel">Ekeleme İşlemi</h3>
-            </div>
-            <div class="modal-body">
-                <p class="text-center">Müşteri Başarıyla Eklenmiş</p>
-            </div>
-            <div class="modal-footer d-flex justify-content-center" >
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="modalConfirm">Tamamdır</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
 <script>
-    const myModal = document.getElementById('buttonModal')
-    const myInput = document.getElementById('myInput')
-    document.getElementById('modalConfirm').addEventListener('click', function () {
-       
-        window.location.href = '/Client/Index'; 
-    });
-    myModal.addEventListener('shown.bs.modal', () => {
-        myInput.focus()
-    })
+
+    $('#myInput').click(function() {
+        alert("Müşteri Ekleme Yapıldı")        
+             }
+    )
 </script>
 

@@ -25,6 +25,16 @@ namespace _50_Ders_MVC_Projesi
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+
+            
+
+            bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
+                        "~/Scripts/jquery.dataTables.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                        "~/Content/jquery.dataTables.min.css"));
+
         }
     }
 }

@@ -1,0 +1,57 @@
+﻿@model List<_50_Ders_MVC_Projesi.Models.Entities.Sale>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_mainLayout.cshtml";
+}
+
+<p class="display-6 text-center">SATIŞLARI</p>
+
+    <div class="d-flex justify-content-center">
+        <hr style="width:800px" />
+
+    </div>
+
+@if (Model.Count == 0)
+{
+
+    <div class="container d-flex justify-content-center">
+        <div class="bg-info text-light rounded-5 d-flex justify-content-center align-items-center" style="opacity:0.9; width:100%; height:50px;">
+            <h5 class="text-center"><i class="fa-solid fa-circle-info"></i> Şu anda hiç bir Satış Yoktur</h5>
+        </div>
+    </div>
+}
+else
+ {
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>SATIŞ ID</th>
+                <th>ÜRÜN</th>
+                <th>MÜŞTERİ BİLGİ</th>
+                <th>ADET</th>
+                <th>FIYAT</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var sale in Model)
+                {
+                    <tr>
+                        <td>@sale.SATISID</td>
+                        <td>@sale.Product.URUNAD</td>
+                        <td> @String.Concat(sale.Client.MUSTERIAD," ",sale.Client.MUSTERISOYAD)</td>
+                        <td>@sale.ADET</td>
+                        <td>@sale.FIYAT</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+ }
+<br />
+<br />
+@Html.Action("Create", "Sale")
+
+
+
+
+

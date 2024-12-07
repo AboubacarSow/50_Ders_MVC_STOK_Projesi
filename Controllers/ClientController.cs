@@ -8,9 +8,14 @@ namespace _50_Ders_MVC_Projesi.Controllers
     {
         Entities _dbContext = new Entities();
         // GET: Client
-        public ActionResult Index()
+        public ActionResult Index(string parameter)
         {
-            return View(_dbContext.Clients.ToList());
+            IQueryable<Client> clients= _dbContext.Clients;
+            if (!string.IsNullOrEmpty(parameter))
+            {
+                clients=clients.Where(c=>c.MUSTERIAD.Contains(parameter));  
+            }
+            return View(clients.ToList());  
         }
         [HttpGet]
         public ActionResult Create()
@@ -26,7 +31,7 @@ namespace _50_Ders_MVC_Projesi.Controllers
             }
             _dbContext.Clients.Add(client);
             _dbContext.SaveChanges();
-            return View();
+            return RedirectToAction("Index");
         }
 
         public ActionResult Delete(int id)
