@@ -83,6 +83,7 @@
 
  <img src="Assets/screenShoots/diagram.PNG" alt="diagram "/>
 
+ Tabloları arasında ilişki gösterilmektedir
 </body>
 
 <html>
