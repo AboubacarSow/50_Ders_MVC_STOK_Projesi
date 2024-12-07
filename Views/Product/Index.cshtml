@@ -1,15 +1,10 @@
 ﻿@using _50_Ders_MVC_Projesi.Models.Entities
 @model List<Product>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Ürünler";
     Layout = "~/Views/Shared/_mainLayout.cshtml";
 }
-<script>
-    $(document).ready(function () {
-        $('#targetTable').DataTable();
-    });
 
-</script>
 
 
 <table class="table table-bordered " id="targetTable">
@@ -43,5 +38,14 @@
 
 </table>
 <a href="/Product/Create" class="btn btn-primary"><i class="fa-duotone fa-solid fa-plus me-1"></i>Yeni Ürün Ekle</a>
+<link href="~/Assets/datatables.min.css" rel="stylesheet" />
+<link href="~/Assets/datatables.css" rel="stylesheet" />
+<script src="~/Assets/datatables.js"></script>
+<script src="~/Assets/datatables.min.js"></script>
 
+<script>
+    $(document).ready(function () {
+        $('#targetTable').DataTable();
+    });
 
+</script>
