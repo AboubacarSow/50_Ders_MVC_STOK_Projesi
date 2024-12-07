@@ -9,7 +9,7 @@
 ### Bu Proje Stok ve Müşteri için admin Paneli bir web uygulama geliştirimiş
 <hr />
 
-![Favikon]("~/Assets/fivion.ico")
+![Favikon](Assets/fivion.ico)
 
 ### Projede :
 
@@ -37,54 +37,54 @@
 	
    </ul>
 
+
 ## Kategoriler Sayfası
 
-<img src="~/Assets/screenShoots/kategori.PNG" alt="List of Categories"/>
+<img src="Assets/screenShoots/kategori.PNG" alt="List of Categories"/>
 
 ## Kategori Ekleme Sayfası
 
-<img src="~/Assets/screenShoots/create_kategori.PNG" alt="Create Category"/>
+<img src="Assets/screenShoots/create_kategori.PNG" alt="Create Category"/>
 
 ## Ürünleri Sayfası
 
-<img src="~/Assets/screenShoots/products.PNG" alt="List of Products"/>
+<img src="Assets/screenShoots/products.PNG" alt="List of Products"/>
 
 ## Ürün Ekleme Sayfası
 
-<img src="~/Assets/screenShoots/create_product.PNG" alt="Create Product"/>
+<img src="Assets/screenShoots/create_product.PNG" alt="Create Product"/>
 
 ## Müşteriler Sayfası
 
-<img src="~/Assets/screenShoots/client.PNG" alt="Client List" />
+<img src="Assets/screenShoots/client.PNG" alt="Client List" />
 
 ## Müşteri Oluşturma Sayfası
 
-<img src="~/Assets/screenShoots/createclient.PNG" alt="Create client"/>
+<img src="Assets/screenShoots/createclient.PNG" alt="Create client"/>
 
 
 ## Satışlar Sayfası
 
-<img src="~/Assets/screenShoots/sale.PNG" alt="Sale list"/>
+<img src="Assets/screenShoots/sale.PNG" alt="Sale list"/>
 
 
 ## Satış Oluşturma Modalı
 
-<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Purchase"/>
+<img src="Assets/screenShoots/purchase_Sale.PNG" alt="Purchase"/>
 
 ## Yardım Modalı
 
-<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Help modal"/>
+<img src="Assets/screenShoots/purchase_Sale.PNG" alt="Help modal"/>
 
-#### Her hangi bir sayfada yardım linki basınca bu modal gözükmektedir
-
-
-
-
-
-
+ Her hangi bir sayfada yardım linki basınca bu modal gözükmektedir
 
 
 </body>
 
 <html>
+
+
+
+
+
 
