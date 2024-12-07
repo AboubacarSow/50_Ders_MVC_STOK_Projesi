@@ -4,6 +4,13 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_mainLayout.cshtml";
 }
+<script>
+    $(document).ready(function () {
+        $('#targetTable').DataTable();
+    });
+
+</script>
+
 
 <table class="table table-bordered " id="targetTable">
     <thead>
@@ -37,13 +44,4 @@
 </table>
 <a href="/Product/Create" class="btn btn-primary"><i class="fa-duotone fa-solid fa-plus me-1"></i>Yeni Ürün Ekle</a>
 
-
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-<link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet" />
-<script>
-    $(document).ready(function () {
-        $('#targetTable').DataTable();
-    });
-
-</script>
 
