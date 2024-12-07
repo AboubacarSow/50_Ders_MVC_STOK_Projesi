@@ -6,10 +6,10 @@
 
 # 50 Ders MVC STOK PROJESİ [🚀](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
-<h5 style="text-align:center; color:green"> Bu Proje Stok ve Müşteri için admin Paneli bir web uygulama geliştirimiş </h5>
+### Bu Proje Stok ve Müşteri için admin Paneli bir web uygulama geliştirimiş
 <hr />
 
-<img src="~/Assets/favion.icon" alt="Web sitenin favikon iconu" >
+![Favikon]("~/Assets/fivion.ico")
 
 ### Projede :
 
@@ -23,16 +23,65 @@
 		<li> DataTables</li>
    </ul>
 
-#### Veri tabanı : 
+#### Veri tabanı 🗄️: 
  ###### MSSQL
 
-#### Kullanıllan Yapıları 🚀
+#### Kullanıllan Yapıları 	📚 
+
 	 <ul style="list-style:circle; margin-left:30px;margin-bottom"> 
 		<li> Entity Framework DataBase First Yaklaşımı</li>
 		<li> Modal </li>
 		<li> Pagination </li>
 		<li>Firtreleme</li>
-   </ul>
+     </ul>
+
+## Kategoriler Sayfası
+
+<img src="~/Assets/screenShoots/kategori.PNG" alt="List of Categories">
+
+## Kategori Ekleme Sayfası
+
+<img src="~/Assets/screenShoots/create_kategori.PNG" alt="Create Category">
+
+## Ürünleri Sayfası
+
+<img src="~/Assets/screenShoots/products.PNG" alt="List of Products">
+
+## Ürün Ekleme Sayfası
+
+<img src="~/Assets/screenShoots/create_product.PNG" alt="Create Product">
+
+## Müşteriler Sayfası
+
+<img src="~/Assets/screenShoots/client.PNG" alt="Client List">
+
+## Müşteri Oluşturma Sayfası
+
+<img src="~/Assets/screenShoots/createclient.PNG" alt="Create client">
+
+
+## Satışlar Sayfası
+
+<img src="~/Assets/screenShoots/sale.PNG" alt="Sale list">
+
+
+## Satış Oluşturma Modalı
+
+<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Purchase">
+
+## Yardım Modalı
+
+<img src="~/Assets/screenShoots/purchase_Sale.PNG" alt="Help modal">
+
+#### Her hangi bir sayfada yardım linki basınca bu modal gözükmektedir
+
+
+
+
+
+
+
+
 </body>
 
 <html>
